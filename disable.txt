@@ -1,0 +1,16 @@
+How to Permanently Disable the Startup Sound
+To permanently disable the startup sound so it isn’t played at startup, even if you have your volume level set to maximum volume when you shut down, you need to use a terminal command.
+
+To do this, open a Terminal window
+
+Run the following command in the terminal window:
+
+	sudo nvram SystemAudioVolume=%80
+
+
+Enter your password when prompted and press Enter. Restart your Mac and you won’t hear the sound.
+
+
+Taken from: https://www.howtogeek.com/260693/how-to-disable-the-boot-sound-or-startup-chime-on-a-mac/
+
+
