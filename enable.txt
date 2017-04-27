@@ -1,0 +1,17 @@
+If you’d like to undo your change later and have the startup chime play normally when you boot your Mac, run the following command:
+
+	sudo nvram -d SystemAudioVolume
+
+Help, the Command Didn’t Work!
+Some people report that the above command doesn’t work on their Macs. If it didn’t silence the startup chime on your system, you may want to try running one of these other commands instead. These reportedly work for some people. This may be hardware-dependent, and certain commands may only work on certain hardware.
+
+	sudo nvram SystemAudioVolume=%01
+	sudo nvram SystemAudioVolume=%00
+	sudo nvram SystemAudioVolume=" "
+
+(In the above command, that’s a single space character between the quotation marks.)
+
+Many websites say you can silence your Mac at boot by pressing the “Mute” button on your keyboard and holding it down right after you boot the Mac up. However, this didn’t work for us. Perhaps it only works on older versions of Mac OS X, or with older Mac hardware.
+
+
+Taken from: https://www.howtogeek.com/260693/how-to-disable-the-boot-sound-or-startup-chime-on-a-mac/
